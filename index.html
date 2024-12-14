@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        .link {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid green;
+            text-decoration: none;
+            color: #555;
+            font-size: 20px;
+        }
+        .link:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .yellow-box {
+            background-color: yellow;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .heading-container {
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: black;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .heading-container h1 {
+            font-weight: bold;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 100px;
+            background-color: orange;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+   
+    <div>
+  
+        <a href="#" class="link">This is a link</a>
+    </div>
+
+    <br><br>
+    <div class="yellow-box">
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div class="heading-container">
+        <div class="background-image"></div>
+        <h1>This is a heading</h1>
+        <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    </div>
+</body>
+</html>
